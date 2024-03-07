@@ -1,0 +1,71 @@
+.hero {
+  margin-bottom: calc(11.4rem + 16.4rem);
+
+  @include mobile {
+    margin-bottom: 9rem;
+  }
+
+  .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    @include mobile {
+      flex-direction: column;
+    }
+  }
+
+  &__content {
+    max-width: 627px;
+
+    @include mobile {
+      text-align: center;
+    }
+  }
+
+  &__title {
+    margin-bottom: 1.5rem;
+
+    @include mobile {
+      font-size: 2.4rem;
+      line-height: 3.6rem;
+      margin-bottom: 2.4rem;
+    }
+  }
+
+  &__text {
+    margin-bottom: 2.5rem;
+    max-width: 585px;
+    font-size: 1.7rem;
+
+    @include mobile {
+      font-size: 1.4rem;
+      line-height: 2.1rem;
+      margin-bottom: 3.2rem;
+    }
+  }
+
+  &__form {
+    display: flex;
+    gap: 1.6rem;
+
+    @include mobile {
+      flex-direction: column;
+    }
+  }
+
+  .input {
+    max-width: 320px;
+
+    @include mobile {
+      max-width: 100%;
+    }
+  }
+
+  &__image-container {
+    @include mobile {
+      order: -1;
+      margin-bottom: 4rem;
+    }
+  }
+}

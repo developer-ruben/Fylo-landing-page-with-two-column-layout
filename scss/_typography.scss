@@ -1,0 +1,22 @@
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: $heading-font-family;
+}
+
+h1 {
+  font-size: $header-xl-font-size;
+  line-height: $header-xl-line-height;
+}
+
+h2 {
+  font-size: $header-xl-font-size;
+  line-height: $header-xl-line-height;
+  @include mobile {
+    font-size: 1.6rem;
+    line-height: 2.4rem;
+  }
+}

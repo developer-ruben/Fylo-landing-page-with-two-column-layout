@@ -1,0 +1,38 @@
+.header {
+  padding: 6.5rem 0 8.6rem 0;
+
+  @include mobile {
+    padding: 2.4rem 0 9.8rem 0;
+  }
+
+  .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  &__list {
+    list-style-type: none;
+    display: flex;
+    align-items: center;
+    gap: 5.8rem;
+
+    @include mobile {
+      gap: 2.4rem;
+    }
+  }
+
+  &__link {
+    color: $color-primary-very-dark-blue;
+
+    @include mobile {
+      font-size: 1.2rem;
+    }
+  }
+
+  &__logo {
+    @include mobile {
+      width: 80px;
+    }
+  }
+}

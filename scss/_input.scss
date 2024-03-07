@@ -1,0 +1,43 @@
+.input {
+  position: relative;
+  width: 100%;
+
+  input {
+    font-family: $body-font-family;
+    width: 100%;
+    border: 1px solid $color-primary-very-dark-blue;
+    border-radius: 3.13px;
+    font-size: 1.4rem;
+    padding: 1.4rem 2.1rem;
+  }
+
+  p {
+    display: none;
+  }
+
+  &--error {
+    input {
+      border: 1px solid $color-accent-red;
+    }
+
+    .input__error-message {
+      font-size: 1.2rem;
+      display: block;
+      position: absolute;
+      bottom: 0;
+      transform: translateY(100%);
+      color: $color-accent-red;
+
+      @include mobile {
+        transform: translateY(10%);
+        position: static;
+        text-align: left;
+      }
+    }
+  }
+}
+
+::placeholder {
+  opacity: 0.5;
+  color: $color-neutral-light-gray;
+}
