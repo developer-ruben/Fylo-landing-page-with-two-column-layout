@@ -233,7 +233,7 @@ p {
 .about-section {
   position: relative;
   background-color: hsl(var(--clr-light-grayish-blue));
-  padding: 17.8rem 0 10.7rem 0;
+  padding: calc(17.8rem - 114px) 0 10.7rem 0;
 }
 
 .about-section::before {
