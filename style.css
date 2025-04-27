@@ -289,7 +289,7 @@ p {
 .quote {
   display: flex;
   flex-direction: column;
-  gap: 0.8rem;
+  gap: 1.6rem;
   box-shadow: 0 0 10px 5px hsl(var(--clr-dark-gray), 0.0459);
   border-radius: 0.5rem;
   background-color: hsl(var(--clr-white));
@@ -570,6 +570,7 @@ p {
     padding: 3.8rem 1.2rem 1.8rem 2.6rem;
     max-width: 280px;
     text-align: left;
+    gap: 1.1rem;
   }
 
   .quote__text {
